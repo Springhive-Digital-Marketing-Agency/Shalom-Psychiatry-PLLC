@@ -178,9 +178,9 @@
 .v2-hero-content-fw {
     position: relative;
     z-index: 2;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 60px !important;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
     width: 100%;
     box-sizing: border-box;
 }

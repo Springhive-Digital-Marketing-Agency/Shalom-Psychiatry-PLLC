@@ -1149,16 +1149,15 @@ a:hover {
     position: absolute;
     z-index: 2;
     width: 100%;
-    max-width: 100% !important;
+    max-width: 1500px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     top: 0;
-    left: 0 !important;
-    margin: 0 !important;
-    transform: none !important;
-    padding: 0 2rem 0 70px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 var(--spacing-sm);
     box-sizing: border-box;
 }
 .hero-content-v1 .hero-text {
