@@ -207,6 +207,7 @@
     font-family: 'Playfair Display', serif;
     font-style: italic;
     color: var(--v2-teal-light);
+    display: block;
 }
 .v2-hero-content-fw .v2-hero-desc {
     font-size: 1.15rem;
