@@ -116,10 +116,10 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-light);
+    background-color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    color: white;
+    color: var(--color-primary);
 }
 
 .btn-secondary {
@@ -176,9 +176,25 @@ a:hover {
     align-items: center;
 }
 
-.top-bar-left { opacity: 0.9; }
-.top-bar-right { display: flex; gap: 1.5rem; align-items: center; opacity: 0.9; }
-.top-bar-right a { color: white; opacity: 0.8; }
+.top-bar-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    opacity: 0.9;
+}
+.top-bar-left span {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+}
+.top-bar-right {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+.top-bar-right a { color: white; opacity: 0.8; white-space: nowrap; }
 .top-bar-right a:hover { opacity: 1; text-decoration: underline; }
 
 .global-header {
@@ -203,21 +219,76 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 58px;
+    width: auto;
+    display: block;
+    transition: var(--transition-smooth);
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .nav-link {
     font-weight: 500;
     color: var(--color-text-main);
+    white-space: nowrap;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
 }
 
 .nav-link:hover {
     color: var(--color-secondary);
+}
+
+/* Laptop Header Compression */
+@media (max-width: 1400px) {
+    .header-container {
+        padding: 0.8rem 1.5rem;
+    }
+    .logo img {
+        height: 50px;
+    }
+    .nav-links {
+        gap: 1.2rem;
+    }
+    .nav-link {
+        font-size: 0.88rem;
+        white-space: nowrap;
+    }
+    .nav-links .btn {
+        padding: 0.65rem 1.4rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 0.6rem 1rem;
+    }
+    .logo img {
+        height: 44px;
+    }
+    .nav-links {
+        gap: 0.75rem;
+    }
+    .nav-link {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    .nav-links .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.78rem;
+        white-space: nowrap;
+    }
 }
 
 /* Hero Section Redesign */
@@ -276,6 +347,10 @@ a:hover {
     margin-bottom: 2.5rem;
 }
 .hero-actions .btn { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;}
+.hero-actions .btn-outline:hover {
+    background-color: white !important;
+    color: var(--color-primary) !important;
+}
 
 .hero-trust {
     font-size: 0.85rem;
@@ -468,8 +543,8 @@ a:hover {
 }
 
 .clinical-card .btn-outline:hover {
-    background: white;
-    color: var(--color-primary);
+    background: white !important;
+    color: var(--color-primary) !important;
 }
 
 /* Video Center */
@@ -488,15 +563,17 @@ a:hover {
 }
 
 .video-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .video-grid > * {
-    flex: 1 1 350px;
-    max-width: 450px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .video-card {
@@ -560,8 +637,8 @@ a:hover {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
     margin-bottom: var(--spacing-lg);
 }
 
@@ -785,9 +862,12 @@ a:hover {
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,0.85); 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     opacity: 0;
     transition: opacity 0.3s ease;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .modal.show {
@@ -800,10 +880,13 @@ a:hover {
 .modal-content {
     position: relative;
     width: 90%;
-    max-width: 1000px;
-    background: #000;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 680px;
+    background: #0d131f;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+    overflow: visible;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .iframe-container {
@@ -811,6 +894,9 @@ a:hover {
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
+    background: #000;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 
 .iframe-container iframe {
@@ -819,29 +905,56 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border: none;
 }
 
 .close-modal {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: -18px;
+    right: -18px;
     color: #fff;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s ease;
+    z-index: 25;
+    background: #1A202C;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    border: 2px solid rgba(255,255,255,0.6);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
 .close-modal:hover {
-    color: var(--color-accent-gold);
+    color: white;
+    background: var(--color-primary);
+    border-color: white;
+    transform: scale(1.12);
+}
+
+.modal-welcome-text {
+    color: rgba(255,255,255,0.95);
+    text-align: center;
+    padding: 1.2rem 1.5rem;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: var(--font-body);
+    letter-spacing: 0.3px;
+    box-sizing: border-box;
+    background: #0d131f;
+    border-radius: 0 0 12px 12px;
 }
 
 
 
 /* Insurance Summary */
 .insurance-summary {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) 0 50px 0;
 }
 
 .pricing-grid {
@@ -1006,18 +1119,238 @@ a:hover {
     color: var(--color-text-muted);
 }
 
-@media (max-width: 1024px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
+/* ---------- HERO HOMEPAGE (index1) ---------- */
+.hero-homepage {
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+}
+.hero-homepage .hero-slideshow {
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero-overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0.1) 75%);
+    z-index: 1;
+}
+.hero-content-v1 {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    left: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    padding: 0 2rem 0 70px !important;
+    box-sizing: border-box;
+}
+.hero-content-v1 .hero-text {
+    text-align: left;
+    color: white;
+    max-width: 650px;
+}
+.hero-pill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(5px);
+}
+.hero-content-v1 .hero-title {
+    color: white;
+    font-family: 'Marcellus', serif;
+    font-size: 3.4rem;
+    line-height: 1.15;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    margin-bottom: 1.2rem;
+}
+.hero-content-v1 .hero-subtitle {
+    color: rgba(255,255,255,0.9);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 2.2rem;
+    max-width: 580px;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+.hero-content-v1 .hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+.hero-content-v1 .hero-actions .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 1rem 2.2rem;
+}
+.hero-content-v1 .hero-actions .btn-outline {
+    color: white;
+    border-color: white;
+    background: rgba(255,255,255,0.1);
+}
+.hero-content-v1 .hero-actions .btn-outline:hover {
+    background: white;
+    color: var(--color-primary);
+}
+
+@media (max-width: 1400px) {
+    .hero-content-v1 {
+        padding: 0 2rem 0 70px !important;
+        left: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
     }
-    
-    .hero-actions {
+    .hero-content-v1 .hero-text {
+        max-width: 580px;
+    }
+    .hero-content-v1 .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Tablet Topbar */
+    .top-bar {
+        padding: 0.45rem 1rem;
+    }
+    .top-bar-container {
+        font-size: 0.8rem;
+    }
+    .top-bar-left {
+        gap: 12px;
+        font-size: 0.8rem;
+    }
+    .top-bar-left span {
+        white-space: nowrap;
+    }
+    .top-bar-left span:nth-child(3) {
+        display: none; /* Hide the long address in tablet view so Call and SMS fit neatly on 1 line */
+    }
+    .top-bar-right {
+        gap: 12px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
+    /* Tablet Header Navigation */
+    .header-container {
+        padding: 0.7rem 1.5rem;
+    }
+    .logo img {
+        height: 48px;
+    }
+    .nav-links.desktop-nav {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: flex !important;
+        align-items: center;
         justify-content: center;
     }
 
+    .hero-homepage {
+        height: 520px;
+    }
+    .hero-content-v1 {
+        padding: 0 1.5rem 0 50px !important;
+        left: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
+    .hero-content-v1 .hero-text {
+        max-width: 520px;
+    }
+    .hero-content-v1 .hero-title {
+        font-size: 2.7rem;
+    }
+    .hero-content-v1 .hero-subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 1.6rem;
+    }
+    .hero-content-v1 .hero-actions .btn-outline {
+        display: none !important;
+    }
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
     .clinical-grid {
         grid-template-columns: 1fr;
+    }
+    .provider-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .provider-image-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .provider-image-wrapper::before {
+        display: none;
+    }
+    .provider-img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+    .provider-badge {
+        display: none !important;
+    }
+    .provider-info {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .logo-grid {
+        justify-content: center;
+    }
+    .logo-grid img {
+        min-width: 160px;
+        flex: 0 1 calc(33.333% - 1.5rem);
+    }
+    .modal {
+        padding: 1rem;
+    }
+    .modal-content {
+        width: 80% !important;
+        max-width: 540px !important;
+    }
+    .modal-welcome-text {
+        font-size: 0.85rem;
+        padding: 0.8rem 1rem;
+        line-height: 1.5;
+    }
+    .close-modal {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        top: -12px;
+        right: -12px;
     }
 }
 
@@ -1025,13 +1358,80 @@ a:hover {
     .nav-links {
         display: none; /* Mobile menu needed */
     }
-    
-    .hero-title {
-        font-size: 2.5rem;
+    .modal-content {
+        width: 88% !important;
+        max-width: 440px !important;
     }
-    
+    .modal-welcome-text {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .close-modal {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        top: -10px;
+        right: -10px;
+    }
+    .hero-homepage {
+        height: 500px;
+    }
+    .hero-content-v1 {
+        padding: 2rem 1.2rem;
+    }
+    .hero-content-v1 .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-content-v1 .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-content-v1 .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-content-v1 .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem;
+    }
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .logo-grid img {
+        min-width: 140px;
+        flex: 0 1 calc(50% - 1rem);
+    }
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .hero-homepage {
+        height: 460px;
+    }
+    .hero-pill-badge {
+        font-size: 0.72rem;
+        padding: 0.3rem 0.8rem;
+    }
+    .hero-content-v1 .hero-title {
+        font-size: 1.85rem;
+    }
+    .hero-content-v1 .hero-subtitle {
+        font-size: 0.92rem;
+    }
+    .logo-grid img {
+        flex: 1 1 100%;
+        min-width: 100%;
     }
 }
 
@@ -1095,12 +1495,12 @@ a:hover {
     border: none;
     cursor: pointer;
     color: var(--color-primary);
+    padding: 0.5rem;
 }
-
-@media (max-width: 768px) {
-    .mobile-menu-btn {
-        display: block;
-    }
+.mobile-menu-btn svg {
+    display: block;
+    width: 28px;
+    height: 28px;
 }
 
 /* Global Page Hero */
@@ -1240,7 +1640,7 @@ a:hover {
 }
 
 .condition-cta {
-    padding: 2rem 0;
+    padding: 0 0 100px 0;
     text-align: center;
     margin-top: 2rem;
 }

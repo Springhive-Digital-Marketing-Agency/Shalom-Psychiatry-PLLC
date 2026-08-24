@@ -17,13 +17,13 @@ const headerHTML = `
             </span>
         </div>
         <div class="top-bar-right" style="display: flex; gap: 15px; align-items: center;">
-            <a href="#portal" style="font-weight: 500; text-decoration: none; color: inherit;">Patient Portal</a>
+            <a data-original-href="#portal" href="javascript:void(0)" style="font-weight: 500; text-decoration: none; color: inherit;">Patient Portal</a>
             <div style="width: 1px; height: 14px; background: rgba(255,255,255,0.3);"></div>
             <div style="display: flex; gap: 12px; align-items: center;">
-                <a href="#facebook" style="color: inherit; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="Facebook">
+                <a data-original-href="#facebook" href="javascript:void(0)" style="color: inherit; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="Facebook">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                 </a>
-                <a href="#instagram" style="color: inherit; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="Instagram">
+                <a data-original-href="#instagram" href="javascript:void(0)" style="color: inherit; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1" aria-label="Instagram">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
             </div>
@@ -32,59 +32,59 @@ const headerHTML = `
 </div>
 <header class="global-header">
     <div class="header-container">
-        <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <a data-original-href="index.html" href="javascript:void(0)" class="logo" style="display: flex; align-items: center;">
             <img src="images/logo.png" alt="24-7 Shalom Psychiatry Logo" style="height: 65px; width: auto; display: block;">
         </a>
         <nav class="nav-links desktop-nav">
-            <a href="index.html" class="nav-link">HOME</a>
+            <a data-original-href="index.html" href="javascript:void(0)" class="nav-link">HOME</a>
             
             <div class="dropdown">
-                <a href="about/about-us.html" class="nav-link dropdown-toggle">ABOUT US <span class="caret">▼</span></a>
+                <a data-original-href="about/about-us.html" href="javascript:void(0)" class="nav-link dropdown-toggle">ABOUT US <span class="caret">▼</span></a>
                 <div class="dropdown-menu">
-                    <a href="about/about-us.html">About 24-7 Shalom Psychiatry</a>
-                    <a href="providers/dr-peace.html">Meet Dr. Peace</a>
-                    <a href="about/approach.html">Our Approach</a>
-                    <a href="about/providers.html">Our Providers</a>
-                    <a href="states/texas.html">States We Serve</a>
-                    <a href="about/faqs.html">FAQs</a>
+                    <a data-original-href="about/about-us.html" href="javascript:void(0)">About 24-7 Shalom Psychiatry</a>
+                    <a data-original-href="providers/dr-peace.html" href="javascript:void(0)">Meet Dr. Peace</a>
+                    <a data-original-href="about/approach.html" href="javascript:void(0)">Our Approach</a>
+                    <a data-original-href="about/providers.html" href="javascript:void(0)">Our Providers</a>
+                    <a data-original-href="states/texas.html" href="javascript:void(0)">States We Serve</a>
+                    <a data-original-href="about/faqs.html" href="javascript:void(0)">FAQs</a>
                 </div>
             </div>
 
             <div class="dropdown mega-dropdown">
-                <a href="services/psychiatric-services.html" class="nav-link dropdown-toggle">SERVICES <span class="caret">▼</span></a>
+                <a data-original-href="services/psychiatric-services.html" href="javascript:void(0)" class="nav-link dropdown-toggle">SERVICES <span class="caret">▼</span></a>
                 <div class="dropdown-menu mega-menu">
                     <div class="mega-column">
                         <h4>Featured Services</h4>
-                        <a href="conditions/adhd.html">ADHD Center</a>
-                        <a href="conditions/anxiety.html">Anxiety Center</a>
-                        <a href="conditions/pain-management.html">Pain & Mental Health</a>
+                        <a data-original-href="conditions/adhd.html" href="javascript:void(0)">ADHD Center</a>
+                        <a data-original-href="conditions/anxiety.html" href="javascript:void(0)">Anxiety Center</a>
+                        <a data-original-href="conditions/pain-management.html" href="javascript:void(0)">Pain & Mental Health</a>
                     </div>
                     <div class="mega-column">
                         <h4>Clinical Care</h4>
-                        <a href="services/psychiatric-services.html">Psychiatric Services</a>
-                        <a href="services/medication-management.html">Medication Management</a>
-                        <a href="services/telepsychiatry.html">Telepsychiatry</a>
+                        <a data-original-href="services/psychiatric-services.html" href="javascript:void(0)">Psychiatric Services</a>
+                        <a data-original-href="services/medication-management.html" href="javascript:void(0)">Medication Management</a>
+                        <a data-original-href="services/telepsychiatry.html" href="javascript:void(0)">Telepsychiatry</a>
                     </div>
                     <div class="mega-column">
                         <h4>Library</h4>
-                        <a href="services/conditions.html">Conditions We Treat</a>
-                        <a href="video-center.html">Mental Health Video Center</a>
+                        <a data-original-href="services/conditions.html" href="javascript:void(0)">Conditions We Treat</a>
+                        <a data-original-href="video-center.html" href="javascript:void(0)">Mental Health Video Center</a>
                     </div>
                 </div>
             </div>
 
             <div class="dropdown">
-                <a href="careers/opportunities.html" class="nav-link dropdown-toggle">CAREERS <span class="caret">▼</span></a>
+                <a data-original-href="careers/opportunities.html" href="javascript:void(0)" class="nav-link dropdown-toggle">CAREERS <span class="caret">▼</span></a>
                 <div class="dropdown-menu">
-                    <a href="careers/opportunities.html">Current Opportunities</a>
-                    <a href="careers/apply.html">Apply Now</a>
-                    <a href="careers/why-us.html">Why Work With Us</a>
+                    <a data-original-href="careers/opportunities.html" href="javascript:void(0)">Current Opportunities</a>
+                    <a data-original-href="careers/apply.html" href="javascript:void(0)">Apply Now</a>
+                    <a data-original-href="careers/why-us.html" href="javascript:void(0)">Why Work With Us</a>
                 </div>
             </div>
 
-            <a href="testimonials.html" class="nav-link">TESTIMONIALS</a>
-            <a href="contact.html" class="nav-link">CONTACT US</a>
-            <a href="#book" class="btn btn-accent" style="margin-left: 1rem;">Schedule an Appointment</a>
+            <a data-original-href="testimonials.html" href="javascript:void(0)" class="nav-link">TESTIMONIALS</a>
+            <a data-original-href="contact.html" href="javascript:void(0)" class="nav-link">CONTACT US</a>
+            <a data-original-href="#book" href="javascript:void(0)" class="btn btn-accent" style="margin-left: 1rem;">Schedule an Appointment</a>
         </nav>
         <button class="mobile-menu-btn" aria-label="Open Menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -99,44 +99,44 @@ const headerHTML = `
         <div class="mobile-nav-content">
             <button class="close-menu-btn" aria-label="Close Menu">✕</button>
             <nav class="mobile-links">
-                <a href="index.html">HOME</a>
+                <a data-original-href="index.html" href="javascript:void(0)">HOME</a>
                 
                 <div class="mobile-accordion">
                     <button class="accordion-btn">ABOUT US <span class="caret">▼</span></button>
                     <div class="accordion-content">
-                        <a href="about/about-us.html">About 24-7 Shalom Psychiatry</a>
-                        <a href="providers/dr-peace.html">Meet Dr. Peace</a>
-                        <a href="about/approach.html">Our Approach</a>
-                        <a href="about/providers.html">Our Providers</a>
-                        <a href="states/texas.html">States We Serve</a>
+                        <a data-original-href="about/about-us.html" href="javascript:void(0)">About 24-7 Shalom Psychiatry</a>
+                        <a data-original-href="providers/dr-peace.html" href="javascript:void(0)">Meet Dr. Peace</a>
+                        <a data-original-href="about/approach.html" href="javascript:void(0)">Our Approach</a>
+                        <a data-original-href="about/providers.html" href="javascript:void(0)">Our Providers</a>
+                        <a data-original-href="states/texas.html" href="javascript:void(0)">States We Serve</a>
                     </div>
                 </div>
 
                 <div class="mobile-accordion">
                     <button class="accordion-btn">SERVICES <span class="caret">▼</span></button>
                     <div class="accordion-content">
-                        <a href="conditions/adhd.html">ADHD Center</a>
-                        <a href="conditions/anxiety.html">Anxiety Center</a>
-                        <a href="conditions/pain-management.html">Pain & Mental Health</a>
-                        <a href="services/conditions.html">Conditions We Treat</a>
-                        <a href="video-center.html">Mental Health Video Center</a>
-                        <a href="services/psychiatric-services.html">Psychiatric Services</a>
-                        <a href="services/medication-management.html">Medication Management</a>
-                        <a href="services/telepsychiatry.html">Telepsychiatry</a>
+                        <a data-original-href="conditions/adhd.html" href="javascript:void(0)">ADHD Center</a>
+                        <a data-original-href="conditions/anxiety.html" href="javascript:void(0)">Anxiety Center</a>
+                        <a data-original-href="conditions/pain-management.html" href="javascript:void(0)">Pain & Mental Health</a>
+                        <a data-original-href="services/conditions.html" href="javascript:void(0)">Conditions We Treat</a>
+                        <a data-original-href="video-center.html" href="javascript:void(0)">Mental Health Video Center</a>
+                        <a data-original-href="services/psychiatric-services.html" href="javascript:void(0)">Psychiatric Services</a>
+                        <a data-original-href="services/medication-management.html" href="javascript:void(0)">Medication Management</a>
+                        <a data-original-href="services/telepsychiatry.html" href="javascript:void(0)">Telepsychiatry</a>
                     </div>
                 </div>
 
                 <div class="mobile-accordion">
                     <button class="accordion-btn">CAREERS <span class="caret">▼</span></button>
                     <div class="accordion-content">
-                        <a href="careers/opportunities.html">Current Opportunities</a>
-                        <a href="careers/apply.html">Apply Now</a>
+                        <a data-original-href="careers/opportunities.html" href="javascript:void(0)">Current Opportunities</a>
+                        <a data-original-href="careers/apply.html" href="javascript:void(0)">Apply Now</a>
                     </div>
                 </div>
 
-                <a href="testimonials.html">TESTIMONIALS</a>
-                <a href="contact.html">CONTACT US</a>
-                <a href="#book" class="btn btn-primary mt-2">BOOK AN APPOINTMENT</a>
+                <a data-original-href="testimonials.html" href="javascript:void(0)">TESTIMONIALS</a>
+                <a data-original-href="contact.html" href="javascript:void(0)">CONTACT US</a>
+                <a data-original-href="#book" href="javascript:void(0)" class="btn btn-primary mt-2">BOOK AN APPOINTMENT</a>
             </nav>
         </div>
     </div>
@@ -152,37 +152,33 @@ const footerHTML = `
         </div>
         <div class="footer-grid">
             <div class="footer-col">
-                <a href="index.html" style="display: flex; align-items: center; gap: 20px; margin-bottom: 1.5rem; text-decoration: none;">
-                    <div style="width: 130px; height: 115px; background-image: url('images/footer-logo.png'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;"></div>
-                    <div style="display: flex; flex-direction: column; justify-content: center;">
-                        <span style="font-family: 'Marcellus', serif; font-size: 2.2rem; color: white; line-height: 1.1;">24-7 SHALOM</span>
-                        <span style="font-family: 'Poppins', sans-serif; font-size: 1.1rem; color: #A0AEC0; letter-spacing: 3.5px; margin-top: 4px;">PSYCHIATRY</span>
-                    </div>
+                <a data-original-href="index.html" href="javascript:void(0)" style="display: block; margin-bottom: 1.5rem; text-decoration: none;">
+                    <img src="images/logo-white.png" alt="24-7 Shalom Psychiatry" style="height: 120px; width: auto;">
                 </a>
                 <p class="text-muted mb-2">Mental Health Care, Education & Understanding<br>— Wherever You Are.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <a href="#book">Book an Appointment</a>
-                <a href="#pay">Pay Online</a>
-                <a href="#portal">Patient Portal</a>
-                <a href="#insurance">Insurance</a>
-                <a href="careers/opportunities.html">Careers</a>
+                <a data-original-href="#book" href="javascript:void(0)">Book an Appointment</a>
+                <a data-original-href="#pay" href="javascript:void(0)">Pay Online</a>
+                <a data-original-href="#portal" href="javascript:void(0)">Patient Portal</a>
+                <a data-original-href="#insurance" href="javascript:void(0)">Insurance</a>
+                <a data-original-href="careers/opportunities.html" href="javascript:void(0)">Careers</a>
             </div>
             <div class="footer-col">
                 <h4>Clinical Centers</h4>
-                <a href="conditions/adhd.html">ADHD Center</a>
-                <a href="conditions/anxiety.html">Anxiety Center</a>
-                <a href="conditions/pain-management.html">Pain & Mental Health</a>
-                <a href="#videos">Video Center</a>
+                <a data-original-href="conditions/adhd.html" href="javascript:void(0)">ADHD Center</a>
+                <a data-original-href="conditions/anxiety.html" href="javascript:void(0)">Anxiety Center</a>
+                <a data-original-href="conditions/pain-management.html" href="javascript:void(0)">Pain & Mental Health</a>
+                <a data-original-href="#videos" href="javascript:void(0)">Video Center</a>
             </div>
             <div class="footer-col">
                 <h4>States Served</h4>
-                <a href="states/texas.html">Texas</a>
-                <a href="states/new-mexico.html">New Mexico</a>
-                <a href="states/nevada.html">Nevada</a>
-                <a href="states/arizona.html">Arizona</a>
-                <a href="#states">View All States &rarr;</a>
+                <a data-original-href="states/texas.html" href="javascript:void(0)">Texas</a>
+                <a data-original-href="states/new-mexico.html" href="javascript:void(0)">New Mexico</a>
+                <a data-original-href="states/nevada.html" href="javascript:void(0)">Nevada</a>
+                <a data-original-href="states/arizona.html" href="javascript:void(0)">Arizona</a>
+                <a data-original-href="#states" href="javascript:void(0)">View All States &rarr;</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -381,4 +377,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Small delay for smooth entry
     }
 });
+
 
