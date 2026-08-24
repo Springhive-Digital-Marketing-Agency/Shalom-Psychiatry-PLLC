@@ -178,10 +178,11 @@
 .v2-hero-content-fw {
     position: relative;
     z-index: 2;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 70px;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 60px !important;
     width: 100%;
+    box-sizing: border-box;
 }
 .v2-hero-content-fw .v2-hero-label {
     display: inline-block;
@@ -194,12 +195,12 @@
 }
 .v2-hero-content-fw .v2-hero-title {
     font-family: 'DM Sans', sans-serif;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: white;
     line-height: 1.15;
     margin-bottom: 1.5rem;
-    max-width: 900px;
+    max-width: 650px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 .v2-hero-content-fw .v2-hero-title span {
@@ -208,11 +209,11 @@
     color: var(--v2-teal-light);
 }
 .v2-hero-content-fw .v2-hero-desc {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: rgba(255,255,255,0.9);
-    line-height: 1.8;
-    margin-bottom: 2.5rem;
-    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 2.2rem;
+    max-width: 580px;
     text-shadow: 0 1px 5px rgba(0,0,0,0.5);
 }
 .v2-hero-btns {
