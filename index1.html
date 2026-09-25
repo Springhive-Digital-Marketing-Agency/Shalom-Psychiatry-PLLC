@@ -3,296 +3,534 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24-7 Shalom Psychiatry | Mental Health Care & Education</title>
-    <meta name="description" content="Premium, accessible mental health care, education, and understanding. We specialize in ADHD, Anxiety, and Pain & Mental Health across multiple states.">
+    <title>VITALÉ | Wellness, Strength, Balance</title>
+    
+    <!-- Fonts: Playfair Display for headings, Poppins for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index2.css">
 </head>
 <body>
-    <div id="header-placeholder"></div>
 
-    <main>
-        <!-- HERO SECTION REDESIGN -->
-        <section class="hero hero-homepage" id="openVideoBtn">
-            <!-- Background Slideshow -->
-            <div class="hero-slideshow">
-                <div class="slide active" style="background-image: url('images/hero-1.jpg');"></div>
-                <div class="slide" style="background-image: url('images/hero-2.jpg');"></div>
-                <div class="slide" style="background-image: url('images/hero-3.jpg');"></div>
-            </div>
-            <!-- Dark Overlay Gradient for Text Readability -->
-            <div class="hero-overlay-gradient"></div>
+    <!-- Header -->
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <a href="#" class="brand-logo">VITALÉ</a>
             
-            <!-- Left-Aligned Content -->
-            <div class="hero-content hero-content-v1">
-                <div class="hero-text">
-                    <div class="hero-pill-badge">
-                        <span>•</span> COMPREHENSIVE PSYCHIATRY + COMPASSIONATE SUPPORT
-                    </div>
-                    <h1 class="hero-title">CARE THAT HONORS EVERY<br>STAGE OF LIFE.</h1>
-                    <p class="hero-subtitle">Personalized mental health care focused on comfort, independence, dignity, and the wellbeing of every individual we serve with compassion and clinical excellence.</p>
-                    <div class="hero-actions">
-                        <a data-original-href="#book" href="javascript:void(0)" class="btn btn-primary">Explore Our Care</a>
-                        <a data-original-href="#contact" href="javascript:void(0)" class="btn btn-outline">Talk With Our Team</a>
-                    </div>
-                </div>
+            <nav class="desktop-nav">
+                <a href="#home">Home</a>
+                <a href="#wellness">Wellness</a>
+                <a href="#programs">Services</a>
+                <a href="#approach">Our Approach</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <div class="header-right">
+                <a href="#contact" class="btn btn-outline btn-sm desktop-only">Book a Consultation</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Video Modal -->
-        <div id="videoModal" class="modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <div class="iframe-container">
-                    <iframe
-                        id="modalIframe"
-                        src=""
-                        data-src="https://screencast.springhive.net/recordings/uQTeePfNFXZljiqlz3O8"
-                        style="border:none; width: 100%; height: 100%;"
-                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                        allowfullscreen>
-                    </iframe>
+    <!-- Mobile Full Screen Menu -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#wellness" class="nav-link">Wellness</a>
+            <a href="#programs" class="nav-link">Services</a>
+            <a href="#approach" class="nav-link">Our Approach</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#contact" class="btn btn-solid mt-4">Book a Consultation</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Premium Wellness Studio" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content reveal">
+            <span class="label">PERSONALIZED WELLNESS • FITNESS • RECOVERY</span>
+            <h1 class="hero-title">MOVE BETTER.<br>LIVE BETTER.</h1>
+            <p class="hero-subtitle">A personalized wellness and fitness experience designed to help you build strength, improve mobility, and create lasting habits.</p>
+            <div class="hero-actions">
+                <a href="#programs" class="btn btn-solid">Explore Programs</a>
+                <a href="#contact" class="btn btn-outline-light">Book a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro section-padding" id="approach">
+        <div class="container intro-grid">
+            <div class="intro-left reveal">
+                <span class="label">THE VITALÉ APPROACH</span>
+                <h2 class="section-title">Your wellness journey should be designed around you.</h2>
+            </div>
+            <div class="intro-right reveal delay-1">
+                <div class="vertical-line"></div>
+                <p>At VITALÉ, we believe meaningful transformation comes from more than workouts. Our approach brings movement, strength, nutrition, recovery, and mindful living together to create a healthier and more sustainable lifestyle.</p>
+                <a href="#about" class="link-arrow">Discover our philosophy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Pillars -->
+    <section class="pillars section-padding bg-ivory" id="wellness">
+        <div class="container">
+            <div class="pillars-header reveal">
+                <h2 class="section-title">A COMPLETE APPROACH TO WELLNESS</h2>
+                <p class="subtitle">True wellness extends far beyond the gym floor. It is a delicate balance of how we move, how we build resilience, and how we allow our bodies to heal. Our four foundational pillars are designed to guide you toward a more vibrant, energized, and sustainable way of living.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card flip-box reveal">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Movement">
+                            <h3 class="front-title">01 Movement</h3>
+                        </div>
+                        <div class="flip-box-back">
+                            <span class="pillar-num">01</span>
+                            <h3 class="pillar-title">MOVEMENT</h3>
+                            <p>Build mobility, flexibility, coordination, and confidence through intentional movement.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-welcome-text">
-                    "Welcome to 24-7 Shalom Psychiatry. We are here to help you understand your mental health, explore treatment options, and connect with care."
+                
+                <div class="pillar-card flip-box reveal delay-1">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Strength">
+                            <h3 class="front-title">02 Strength</h3>
+                        </div>
+                        <div class="flip-box-back">
+                            <span class="pillar-num">02</span>
+                            <h3 class="pillar-title">STRENGTH</h3>
+                            <p>Develop functional strength through personalized training designed around your goals.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pillar-card flip-box reveal delay-2">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Recovery">
+                            <h3 class="front-title">03 Recovery</h3>
+                        </div>
+                        <div class="flip-box-back">
+                            <span class="pillar-num">03</span>
+                            <h3 class="pillar-title">RECOVERY</h3>
+                            <p>Give your body the time and tools it needs to restore, adapt, and perform.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pillar-card flip-box reveal delay-3">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Balance">
+                            <h3 class="front-title">04 Balance</h3>
+                        </div>
+                        <div class="flip-box-back">
+                            <span class="pillar-num">04</span>
+                            <h3 class="pillar-title">BALANCE</h3>
+                            <p>Create sustainable habits that support your physical and mental wellbeing.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- START HERE (GUIDED NAVIGATION) -->
-        <section class="start-here bg-light" id="start-here">
-            <div class="container">
-                <h2 class="section-title text-center">What brings you here today?</h2>
-                <div class="cards-grid">
-                    <a data-original-href="#book" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="16" y1="2" x2="16" y2="6"></line>
-                                <line x1="8" y1="2" x2="8" y2="6"></line>
-                                <line x1="3" y1="10" x2="21" y2="10"></line>
-                                <path d="m9 16 2 2 4-4"></path>
-                            </svg>
-                        </div>
-                        <h3>I Need an Appointment</h3>
-                        <p>Schedule a new or returning visit. Connect with our dedicated care team today.</p>
-                    </a>
-                    <a data-original-href="conditions/adhd.html" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
-                                <line x1="9" y1="21" x2="15" y2="21"></line>
-                                <path d="M12 6v3l2 2"></path>
-                            </svg>
-                        </div>
-                        <h3>I Think I May Have ADHD</h3>
-                        <p>Explore symptoms and evaluations. Discover personalized strategies for focus.</p>
-                    </a>
-                    <a data-original-href="conditions/anxiety.html" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-                            </svg>
-                        </div>
-                        <h3>I Am Dealing With Anxiety</h3>
-                        <p>Understand and treat your anxiety. Build tools for a calmer, healthier life.</p>
-                    </a>
-                    <a data-original-href="conditions/pain-management.html" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-                                <path d="M12 7v4M10 9h4"/>
-                            </svg>
-                        </div>
-                        <h3>I Am Living With Chronic Pain</h3>
-                        <p>Mental health support for chronic pain. Regain control and improve your wellbeing.</p>
-                    </a>
-                    <a data-original-href="#child-help" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="7" r="4"/>
-                                <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"/>
-                                <circle cx="18" cy="14" r="3"/>
-                                <path d="M22 21v-1a4 4 0 0 0-4-4"/>
-                            </svg>
-                        </div>
-                        <h3>I Need Help for My Child</h3>
-                        <p>Resources for parents and guardians. Find compassionate guidance for your child.</p>
-                    </a>
-                    <a data-original-href="#teen-help" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                            </svg>
-                        </div>
-                        <h3>I Am a Teenager Looking for Info</h3>
-                        <p>Mental health education for adolescents. Empowering teens to thrive and grow.</p>
-                    </a>
-                    <a data-original-href="#refer" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
-                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
-                                <path d="M9 14h6"/>
-                                <path d="M9 18h6"/>
-                                <path d="M9 10h1"/>
-                            </svg>
-                        </div>
-                        <h3>I Am Referring a Patient</h3>
-                        <p>Secure professional referral forms. Partner with us for comprehensive care.</p>
-                    </a>
-                    <a data-original-href="#careers" href="javascript:void(0)" class="card interactive-card">
-                        <div class="card-icon-wrap" style="width: 48px; height: 48px; background: rgba(0, 86, 179, 0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary); margin: 0 auto 1.2rem auto;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                            </svg>
-                        </div>
-                        <h3>I Am Looking for a Career</h3>
-                        <p>Join our growing mental health team. Explore exciting career opportunities with us.</p>
-                    </a>
-                </div>
+    <!-- Programs & Services -->
+    <section class="programs section-padding bg-ivory" id="programs">
+        <div class="container">
+            <div class="programs-header text-center reveal">
+                <span class="label">SIGNATURE OFFERINGS</span>
+                <h2 class="section-title" style="margin-bottom: 1rem;">Programs & Services</h2>
+                <p class="subtitle" style="max-width: 780px; margin-bottom: 3.5rem;">Holistic fitness, intentional movement coaching, and restorative recovery experiences crafted to help you move with purpose and live with vitality.</p>
             </div>
-        </section>
+            
+            <div class="services-arch-grid">
+                <!-- Service 1: Personal Training -->
+                <div class="arch-service-card reveal">
+                    <div class="arch-backdrop-shape"></div>
+                    <div class="arch-card-inner">
+                        <div class="arch-image-wrap">
+                            <img src="assets/images/service_training.jpg" alt="Personal Training Coaching">
+                            <span class="service-badge">STRENGTH & COACHING</span>
+                        </div>
+                        <div class="arch-card-body">
+                            <h3 class="service-title">Personal Training</h3>
+                            <p class="service-desc">One-on-one tailored coaching designed around your movement patterns, strength goals, and lifestyle for sustainable athletic transformation.</p>
+                            <div class="service-meta">
+                                <span class="service-price">Starting from $110+</span>
+                                <span class="service-duration">60 MIN</span>
+                            </div>
+                            <a href="#contact" class="service-btn">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- SIGNATURE CLINICAL AREAS -->
-        <section class="clinical-areas" id="education">
-            <div class="container">
-                <h2 class="section-title">Signature Clinical Areas</h2>
-                <div class="clinical-grid">
-                    <!-- ADHD -->
-                    <div class="clinical-card" style="background-image: url('images/clinical-adhd.jpg');">
-                        <div class="card-overlay"></div>
-                        <div class="card-content" style="position: relative; z-index: 2;">
-                            <h3 style="color: white; font-family: var(--font-heading-serif);">ADHD Center</h3>
-                            <p style="color: rgba(255,255,255,0.9);">Comprehensive evaluation and management for children, teens, and adults. Understand executive function, focus, and modern treatment strategies.</p>
-                            <a data-original-href="conditions/adhd.html" href="javascript:void(0)" class="btn btn-outline" style="color: white; border-color: white;">Explore ADHD Education</a>
+                <!-- Service 2: Mobility & Flow -->
+                <div class="arch-service-card reveal delay-1">
+                    <div class="arch-backdrop-shape"></div>
+                    <div class="arch-card-inner">
+                        <div class="arch-image-wrap">
+                            <img src="assets/images/service_mobility.jpg" alt="Mobility and Flow Session">
+                            <span class="service-badge">MOBILITY & FLOW</span>
+                        </div>
+                        <div class="arch-card-body">
+                            <h3 class="service-title">Mobility & Flow</h3>
+                            <p class="service-desc">Restore joint longevity, dynamic flexibility, and mindful body coordination through intentional guided mobility rituals and functional flow.</p>
+                            <div class="service-meta">
+                                <span class="service-price">Starting from $85+</span>
+                                <span class="service-duration">50 MIN</span>
+                            </div>
+                            <a href="#contact" class="service-btn">LEARN MORE</a>
                         </div>
                     </div>
-                    <!-- ANXIETY -->
-                    <div class="clinical-card" style="background-image: url('images/clinical-anxiety.jpg');">
-                        <div class="card-overlay"></div>
-                        <div class="card-content" style="position: relative; z-index: 2;">
-                            <h3 style="color: white; font-family: var(--font-heading-serif);">Anxiety Center</h3>
-                            <p style="color: rgba(255,255,255,0.9);">From generalized anxiety to panic disorders. Learn about physical symptoms, grounding techniques, and evidence-based treatments.</p>
-                            <a data-original-href="conditions/anxiety.html" href="javascript:void(0)" class="btn btn-outline" style="color: white; border-color: white;">Explore Anxiety Education</a>
+                </div>
+
+                <!-- Service 3: Thermal Recovery -->
+                <div class="arch-service-card reveal delay-2">
+                    <div class="arch-backdrop-shape"></div>
+                    <div class="arch-card-inner">
+                        <div class="arch-image-wrap">
+                            <img src="assets/images/service_recovery.jpg" alt="Thermal Recovery Spa Sanctuary">
+                            <span class="service-badge">THERMAL RECOVERY</span>
                         </div>
-                    </div>
-                    <!-- PAIN & MENTAL HEALTH -->
-                    <div class="clinical-card" style="background-image: url('images/clinical-pain.jpg');">
-                        <div class="card-overlay"></div>
-                        <div class="card-content" style="position: relative; z-index: 2;">
-                            <h3 style="color: white; font-family: var(--font-heading-serif);">Pain & Mental Health</h3>
-                            <p style="color: rgba(255,255,255,0.9);">Discover the vital connection between chronic pain and behavioral health. Evidence-based support for improved quality of life.</p>
-                            <a data-original-href="conditions/pain-management.html" href="javascript:void(0)" class="btn btn-outline" style="color: white; border-color: white;">Explore Pain Management</a>
+                        <div class="arch-card-body">
+                            <h3 class="service-title">Thermal Recovery</h3>
+                            <p class="service-desc">Accelerate muscular repair, reduce systemic inflammation, and reset your central nervous system with contrast therapy and guided restoration.</p>
+                            <div class="service-meta">
+                                <span class="service-price">Starting from $95+</span>
+                                <span class="service-duration">60 MIN</span>
+                            </div>
+                            <a href="#contact" class="service-btn">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- VIDEO CENTER PREVIEW -->
-        <section class="video-center bg-dark">
-            <div class="container">
-                <div class="video-header">
-                    <h2 class="section-title text-light" style="margin-bottom: 0;">Mental Health Video Center</h2>
-                    <p class="text-light" style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.8) !important; font-size: 1.1rem; line-height: 1.6;">Explore our library of expert-led educational videos. Discover insights to help you understand your mental health and explore treatment options.</p>
-                    <a data-original-href="#videos" href="javascript:void(0)" class="text-link text-light" style="margin-top: 0.5rem;">View all videos &rarr;</a>
+    <!-- Featured Program -->
+    <section class="featured-program" id="featured">
+        <div class="featured-bg">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="8 Week Reset" class="featured-img">
+            <div class="dark-overlay"></div>
+        </div>
+        <div class="container featured-content reveal">
+            <span class="label text-gold">SIGNATURE EXPERIENCE</span>
+            <h2 class="section-title text-white">The 8-Week Vitalé Reset</h2>
+            <p class="text-white">A guided eight-week experience designed to help you move better, build strength, improve energy, and establish sustainable wellness habits.</p>
+            
+            <div class="stats-grid">
+                <div class="stat">
+                    <h4>8 WEEKS</h4>
+                    <span>Duration</span>
                 </div>
-                <div class="video-grid">
-                    <div class="video-card">
-                        <div class="video-thumb" style="background-image: url('images/video-1.jpg')">
-                            <button class="play-btn">▶</button>
-                        </div>
-                        <h4 class="text-light mt-1">Understanding Executive Function</h4>
-                        <p class="text-muted">ADHD Education • 3 min read</p>
+                <div class="stat">
+                    <h4>PERSONALIZED</h4>
+                    <span>Training</span>
+                </div>
+                <div class="stat">
+                    <h4>HOLISTIC</h4>
+                    <span>Approach</span>
+                </div>
+            </div>
+            
+            <a href="#contact" class="btn btn-solid-white mt-4">Explore the Program</a>
+        </div>
+    </section>
+
+    <!-- Why VITALÉ Philosophy Section -->
+    <section class="why-vitale section-padding bg-ivory" id="about">
+        <div class="container">
+            <div class="why-header reveal">
+                <span class="label">WHY VITALÉ • OUR PHILOSOPHY</span>
+                <div class="why-title-grid">
+                    <h2 class="section-title">More than fitness.<br><span class="text-gold" style="font-style: italic; font-weight: 400;">A way of living.</span></h2>
+                    <p class="why-lead">We reject cookie-cutter gym routines and exhausting extremes. VITALÉ unites evidence-based athletic coaching, intentional mobility, and restorative therapies into a seamless lifestyle philosophy crafted exclusively around your body.</p>
+                </div>
+            </div>
+
+            <div class="why-main-grid">
+                <!-- Left: Layered Luxury Visual Showcase -->
+                <div class="why-visual-wrap reveal">
+                    <div class="why-main-img-frame">
+                        <img src="assets/images/why_sanctuary.jpg" alt="Vitalé Wellness Sanctuary">
+                        <div class="why-img-overlay-glow"></div>
                     </div>
-                    <div class="video-card">
-                        <div class="video-thumb" style="background-image: url('images/video-2.jpg')">
-                            <button class="play-btn">▶</button>
+                    <div class="why-floating-card reveal delay-1">
+                        <div class="why-sub-img-frame">
+                            <img src="assets/images/why_detail.jpg" alt="Mindful Movement Practice">
                         </div>
-                        <h4 class="text-light mt-1">Physical Symptoms of Anxiety</h4>
-                        <p class="text-muted">Anxiety Center • 5 min read</p>
+                        <div class="why-floating-badge">
+                            <span class="badge-num">100%</span>
+                            <span class="badge-text">Bespoke 1:1 Tailored Care</span>
+                        </div>
                     </div>
-                    <div class="video-card">
-                        <div class="video-thumb" style="background-image: url('images/video-3.jpg')">
-                            <button class="play-btn">▶</button>
+                </div>
+
+                <!-- Right: 2x2 Feature Matrix Tiles -->
+                <div class="why-features-matrix">
+                    <div class="why-tile reveal">
+                        <div class="why-tile-header">
+                            <span class="why-tile-num">01</span>
+                            <div class="why-tile-line"></div>
                         </div>
-                        <h4 class="text-light mt-1">Mental Health & Chronic Pain</h4>
-                        <p class="text-muted">Pain & Mental Health • 4 min read</p>
+                        <h3 class="why-tile-title">Personalized Programs</h3>
+                        <p class="why-tile-desc">No generic templates. Every movement protocol is engineered around your biomechanics, metabolic profile, and unique life goals.</p>
+                    </div>
+
+                    <div class="why-tile reveal delay-1">
+                        <div class="why-tile-header">
+                            <span class="why-tile-num">02</span>
+                            <div class="why-tile-line"></div>
+                        </div>
+                        <h3 class="why-tile-title">Expert Guidance</h3>
+                        <p class="why-tile-desc">Work directly alongside dedicated specialists in functional movement, athletic longevity, and restorative recovery.</p>
+                    </div>
+
+                    <div class="why-tile reveal delay-2">
+                        <div class="why-tile-header">
+                            <span class="why-tile-num">03</span>
+                            <div class="why-tile-line"></div>
+                        </div>
+                        <h3 class="why-tile-title">Holistic Wellness</h3>
+                        <p class="why-tile-desc">We seamlessly weave nutritional science, stress resilience, and mindful recovery into your physical training routine.</p>
+                    </div>
+
+                    <div class="why-tile reveal delay-3">
+                        <div class="why-tile-header">
+                            <span class="why-tile-num">04</span>
+                            <div class="why-tile-line"></div>
+                        </div>
+                        <h3 class="why-tile-title">Sustainable Results</h3>
+                        <p class="why-tile-desc">Focus on lifelong vitality, joint integrity, and daily energy rather than temporary, exhausting quick fixes.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- PROVIDER HIGHLIGHT -->
-        <section class="provider-highlight" id="meet-dr-peace">
-            <div class="container">
-                <div class="provider-grid">
-                    <div class="provider-image-wrapper">
-                        <img src="images/dr-peace.jpg" alt="Dr. Peace - 24-7 Shalom Psychiatry" class="provider-img">
-                        <div class="provider-badge">
-                            <span>Board Certified Psychiatric Provider</span>
+
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials section-padding bg-white" id="testimonials">
+        <div class="container text-center reveal">
+            <span class="label text-gold">TESTIMONIALS • MEMBER STORIES</span>
+            
+            <div class="testimonial-carousel-container">
+                <!-- Navigation Arrows -->
+                <button class="carousel-nav prev" id="testiPrev" aria-label="Previous Testimonial">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+
+                <div class="testimonial-track-wrapper">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Slide 1 -->
+                        <div class="testi-slide active">
+                            <span class="testi-focus-tag">STRENGTH & DAILY ENERGY</span>
+                            <blockquote class="quote">
+                                “VITALÉ completely changed the way I think about fitness. I no longer feel like I'm simply working out — I feel stronger, healthier, and more grounded in everyday life.”
+                            </blockquote>
+                            <div class="stars">★★★★★</div>
+                            <div class="author">
+                                <strong>Emily R.</strong>
+                                <span>Private Coaching Member • 2 Years</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="provider-info">
-                        <h2 class="section-title" style="margin-bottom: 0.5rem;">Meet Dr. Peace</h2>
-                        <p class="text-muted mb-2">Founder & Lead Clinician</p>
-                        <p class="provider-bio">At 24-7 Shalom Psychiatry, we believe that understanding your mental health is the first step toward healing. Our approach is rooted in education, empathy, and evidence-based care.</p>
-                        <p class="provider-bio">Whether you are seeking an evaluation for ADHD, struggling with anxiety, or looking for behavioral support for chronic pain, our team is here to listen and guide you.</p>
-                        <div class="provider-actions">
-                            <a data-original-href="#providers" href="javascript:void(0)" class="btn btn-primary">View Full Profile</a>
-                            <a data-original-href="#book" href="javascript:void(0)" class="btn btn-secondary">Schedule with Dr. Peace</a>
+
+                        <!-- Slide 2 -->
+                        <div class="testi-slide">
+                            <span class="testi-focus-tag">MOBILITY & RESTORATION</span>
+                            <blockquote class="quote">
+                                “The combination of private mobility flow and the contrast thermal sanctuary cured my chronic lower back stiffness. It's not a gym, it's a true sanctuary for longevity.”
+                            </blockquote>
+                            <div class="stars">★★★★★</div>
+                            <div class="author">
+                                <strong>Marcus Vance</strong>
+                                <span>Architect & Movement Member • 1 Year</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testi-slide">
+                            <span class="testi-focus-tag">HOLISTIC RESET & BALANCE</span>
+                            <blockquote class="quote">
+                                “The 8-Week Reset gave me a sustainable framework that fits seamlessly into my demanding executive schedule. The coaches truly listen to your body and adapt every session.”
+                            </blockquote>
+                            <div class="stars">★★★★★</div>
+                            <div class="author">
+                                <strong>Elena Rostova</strong>
+                                <span>Executive & Reset Member</span>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="testi-slide">
+                            <span class="testi-focus-tag">PERFORMANCE & RECOVERY</span>
+                            <blockquote class="quote">
+                                “Every visit feels like stepping into a peaceful five-star retreat. The personalized biomechanical attention and thermal suites are unlike anything else in modern wellness.”
+                            </blockquote>
+                            <div class="stars">★★★★★</div>
+                            <div class="author">
+                                <strong>David Sterling</strong>
+                                <span>Longevity Member • 3 Years</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- INSURANCE & SELF-PAY SUMMARY -->
-        <section class="insurance-summary bg-light" id="insurance">
-            <div class="container text-center">
-                <h2 class="section-title">Accessible Care & Transparent Pricing</h2>
-                <p class="text-muted" style="max-width: 800px; margin: 0 auto 3rem auto;">We accept a wide range of insurance plans and offer straightforward self-pay rates because high-quality mental health care should be accessible.</p>
+                <button class="carousel-nav next" id="testiNext" aria-label="Next Testimonial">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+
+            <!-- Dots Pagination -->
+            <div class="carousel-dots" id="carouselDots">
+                <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+                <button class="dot" data-index="1" aria-label="Slide 2"></button>
+                <button class="dot" data-index="2" aria-label="Slide 3"></button>
+                <button class="dot" data-index="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <img src="assets/images/cta_sanctuary.jpg" alt="Vitalé Wellness Sanctuary Dusk" class="cta-img">
+            <div class="cta-dark-overlay"></div>
+        </div>
+        <div class="container cta-content reveal">
+            <span class="label text-gold">PRIVATE INVITATION • LIMITED MEMBERSHIP</span>
+            <h2 class="section-title text-white">Your highest state of vitality awaits.</h2>
+            <p class="cta-subtitle">Experience a bespoke fusion of athletic performance, mindful movement, and restorative recovery. Step inside our private sanctuary and begin your transformation.</p>
+
+            <div class="cta-actions">
+                <a href="#contact" class="btn btn-solid-gold">SCHEDULE YOUR CONSULTATION</a>
+                <a href="#programs" class="btn btn-outline-light desktop-only">EXPLORE SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding bg-white" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2 class="section-title">LET'S BEGIN YOUR JOURNEY</h2>
+                    <p>Reach out to schedule your initial consultation or ask any questions about our programs.</p>
+                    
+                    <div class="contact-details mt-4">
+                        <div class="detail-block">
+                            <h4>Email</h4>
+                            <a href="mailto:hello@vitale.com">hello@vitale.com</a>
+                        </div>
+                        <div class="detail-block">
+                            <h4>Phone</h4>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+                        <div class="detail-block">
+                            <h4>Studio Location</h4>
+                            <p>1240 Wellness Blvd, Suite 100<br>Los Angeles, CA 90015</p>
+                        </div>
+                        <div class="detail-block">
+                            <h4>Opening Hours</h4>
+                            <p>Mon-Fri: 6am - 8pm<br>Sat-Sun: 8am - 4pm</p>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>Self-Pay: Initial Visit</h3>
-                        <div class="price">$299</div>
-                        <p class="text-muted">Up to 50 minutes of comprehensive evaluation and treatment planning.</p>
-                        <a data-original-href="#book" href="javascript:void(0)" class="btn btn-primary mt-2">Book Initial Visit</a>
+                <div class="contact-form-wrap reveal delay-1">
+                    <form class="contact-form" action="#">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">What are you interested in?</label>
+                            <select id="interest">
+                                <option value="pt">Personal Training</option>
+                                <option value="sc">Strength & Conditioning</option>
+                                <option value="mobility">Mobility</option>
+                                <option value="reset">Wellness Reset</option>
+                                <option value="nutrition">Nutrition & Lifestyle</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell us about your goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid w-100">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>VITALÉ</h2>
+                    <p>Wellness, Strength. Balance.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="nav-col">
+                        <a href="#wellness">Wellness</a>
+                        <a href="#programs">Services</a>
+                        <a href="#approach">Our Approach</a>
                     </div>
-                    <div class="pricing-card">
-                        <h3>Self-Pay: Follow-Up</h3>
-                        <div class="price">$149</div>
-                        <p class="text-muted">Up to 50 minutes for medication management and returning patients.</p>
-                        <a data-original-href="#book" href="javascript:void(0)" class="btn btn-secondary mt-2">Book Follow-Up</a>
+                    <div class="nav-col">
+                        <a href="#about">About</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
                 
-                <div class="insurance-logos" style="padding: 50px 0 0 0;">
-                    <h3 style="font-size: 2rem; font-family: var(--font-heading-serif); margin-bottom: 2rem; color: var(--color-primary);">Accepted Insurance Plans Include:</h3>
-                    <div class="logo-grid">
-                        <img src="images/insurance/aetna.svg" alt="Aetna Insurance" class="insurance-logo">
-                        <img src="images/insurance/bcbs.svg" alt="Blue Cross Blue Shield" class="insurance-logo">
-                        <img src="images/insurance/cigna.svg" alt="Cigna Insurance" class="insurance-logo">
-                        <img src="images/insurance/uhc.svg" alt="UnitedHealthcare" class="insurance-logo">
-                        <img src="images/insurance/medicare.svg" alt="Medicare" class="insurance-logo">
-                    </div>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
                 </div>
             </div>
-        </section>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 VITALÉ Wellness & Fitness. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    </main>
-
-    <div id="footer-placeholder"></div>
-
-    <script src="js/main.js"></script>
+    <script src="index2.js"></script>
 </body>
 </html>
-
-
