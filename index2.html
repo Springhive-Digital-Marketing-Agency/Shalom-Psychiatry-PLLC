@@ -31,8 +31,8 @@
                 </span>
             </div>
             <div class="v2-topbar-right" style="display: flex; align-items: center; gap: 15px;">
-                <a href="javascript:void(0)" class="v2-topbar-link" style="color: white; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Patient Portal</a>
-                <a href="javascript:void(0)" class="v2-topbar-link" style="color: white; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Pay Online</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Patient Portal Link Needed')" class="v2-topbar-link" style="color: white; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Patient Portal</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Payment Integration Needed')" class="v2-topbar-link" style="color: white; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Pay Online</a>
                 <div style="width: 1px; height: 14px; background: rgba(255,255,255,0.3);"></div>
                 <a href="javascript:void(0)" aria-label="Facebook">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
@@ -47,20 +47,22 @@
     <!-- HEADER -->
     <header class="v2-header">
         <div class="v2-header-inner">
-            <a href="javascript:void(0)" class="v2-logo">
+            <a href="index2.html" class="v2-logo">
                 <img src="images/logo.png" alt="24-7 Shalom Psychiatry">
             </a>
             <nav class="v2-nav">
-                <a href="javascript:void(0)">States</a>
+                <a href="index2.html">Home</a>
                 <div class="v2-nav-divider"></div>
-                <a href="javascript:void(0)">Conditions</a>
+                <a href="states.html">States</a>
                 <div class="v2-nav-divider"></div>
-                <a href="javascript:void(0)">ADHD Center</a>
+                <a href="conditions.html">Conditions</a>
                 <div class="v2-nav-divider"></div>
-                <a href="javascript:void(0)">New Patients</a>
+                <a href="adhd-center.html">ADHD Center</a>
                 <div class="v2-nav-divider"></div>
-                <a href="javascript:void(0)">Insurance & Pricing</a>
-                <a href="javascript:void(0)" class="v2-nav-cta">Book Appointment</a>
+                <a href="new-patients.html">New Patients</a>
+                <div class="v2-nav-divider"></div>
+                <a href="insurance.html">Insurance & Pricing</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Scheduling Link Needed')" class="v2-nav-cta">Book Appointment</a>
             </nav>
             <button class="v2-mobile-toggle" id="v2MobileToggle" aria-label="Toggle Navigation Menu">
                 <span></span>
@@ -73,23 +75,24 @@
     <!-- MOBILE NAVIGATION DRAWER -->
     <div class="v2-mobile-drawer" id="v2MobileDrawer">
         <div class="v2-drawer-header">
-            <a href="javascript:void(0)" class="v2-logo">
+            <a href="index2.html" class="v2-logo">
                 <img src="images/logo.png" alt="24-7 Shalom Psychiatry">
             </a>
             <button class="v2-drawer-close" id="v2DrawerClose" aria-label="Close Navigation Menu">&times;</button>
         </div>
         <div class="v2-drawer-body">
             <nav class="v2-drawer-nav">
-                <a href="javascript:void(0)">States</a>
-                <a href="javascript:void(0)">Conditions</a>
-                <a href="javascript:void(0)">ADHD Center</a>
-                <a href="javascript:void(0)">New Patients</a>
-                <a href="javascript:void(0)">Insurance & Pricing</a>
-                <a href="javascript:void(0)">Patient Portal</a>
-                <a href="javascript:void(0)">Pay Online</a>
+                <a href="index2.html">Home</a>
+                <a href="states.html">States</a>
+                <a href="conditions.html">Conditions</a>
+                <a href="adhd-center.html">ADHD Center</a>
+                <a href="new-patients.html">New Patients</a>
+                <a href="insurance.html">Insurance & Pricing</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Patient Portal Link Needed')">Patient Portal</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Payment Integration Needed')">Pay Online</a>
             </nav>
             <div class="v2-drawer-footer" style="margin-top: auto;">
-                <a href="javascript:void(0)" class="v2-btn v2-btn-teal" style="width: 100%; justify-content: center; margin-bottom: 1rem;">Book Appointment</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Scheduling Link Needed')" class="v2-btn v2-btn-teal" style="width: 100%; justify-content: center; margin-bottom: 1rem;">Book Appointment</a>
                 <a href="javascript:void(0)" class="v2-phone-badge" style="width: 100%; justify-content: center;">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
@@ -123,8 +126,8 @@
                 </h1>
                 <p class="v2-hero-desc" style="color: rgba(255,255,255,0.85);">Personalized mental health care specializing in ADHD, Anxiety, and Medication Management. Serving patients across multiple states. We accept insurance and offer transparent self-pay rates.</p>
                 <div class="v2-hero-btns" style="flex-wrap: wrap; gap: 15px;">
-                    <a href="javascript:void(0)" class="v2-btn v2-btn-ghost">Check Insurance</a>
-                    <a href="javascript:void(0)" class="v2-btn v2-btn-ghost">Start ADHD Evaluation</a>
+                    <a href="insurance.html" class="v2-btn v2-btn-ghost">Check Insurance</a>
+                    <a href="adhd-center.html" class="v2-btn v2-btn-ghost">Start ADHD Evaluation</a>
                 </div>
             </div>
 
@@ -196,7 +199,7 @@
                     <h2>What Brings <span>You Here Today?</span></h2>
                 </div>
                 <div class="v2-cards-grid">
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Scheduling Link Needed')" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
@@ -209,7 +212,7 @@
                         <h3>Book Appointment</h3>
                         <p>Schedule a new or returning visit. Connect with our dedicated care team today.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="insurance.html" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -219,7 +222,7 @@
                         <h3>Check My Insurance</h3>
                         <p>Verify your benefits and see if we are in-network with your health plan.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="states.html" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -229,7 +232,7 @@
                         <h3>Find Care in My State</h3>
                         <p>Discover available psychiatric services and telehealth options in your area.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="adhd-center.html" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
@@ -240,7 +243,7 @@
                         <h3>Start ADHD Evaluation</h3>
                         <p>Explore symptoms and begin our comprehensive ADHD evaluation process.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="screening.html" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
@@ -250,7 +253,7 @@
                         <h3>Mental Health Check-In</h3>
                         <p>Take a brief, non-diagnostic screening to explore your current symptoms.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Patient Portal Link Needed')" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -260,7 +263,7 @@
                         <h3>Patient Portal</h3>
                         <p>Access your medical records, message your provider, and manage your care.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Payment Integration Needed')" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="5" width="20" height="14" rx="2"></rect>
@@ -270,7 +273,7 @@
                         <h3>Pay Online</h3>
                         <p>Securely pay your copay, self-pay balance, or outstanding invoice.</p>
                     </a>
-                    <a href="javascript:void(0)" class="v2-card">
+                    <a href="referrals.html" class="v2-card">
                         <div class="v2-card-icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
@@ -361,7 +364,7 @@
                         </div>
 
                         <div class="v2-about-actions">
-                            <a href="javascript:void(0)" class="v2-btn v2-btn-teal">Explore Our Care</a>
+                            <a href="conditions.html" class="v2-btn v2-btn-teal">Explore Our Care</a>
                             <a href="javascript:void(0)" class="v2-phone-badge">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                 (214) 518-2035
@@ -515,7 +518,7 @@
                         <p class="v2-provider-bio">Whether you are seeking an evaluation for ADHD, struggling with persistent anxiety, or looking for behavioral health support for chronic pain, Dr. Peace and our team are here to listen, diagnose with precision, and guide you every step of the way.</p>
 
                         <div class="v2-provider-btns">
-                            <a href="javascript:void(0)" class="v2-btn v2-btn-teal">Schedule with Dr. Peace</a>
+                            <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Scheduling Link Needed')" class="v2-btn v2-btn-teal">Schedule with Dr. Peace</a>
                             <a href="javascript:void(0)" class="v2-btn v2-btn-outline" style="border-color: #CBD5E1;">View Full Credentials</a>
                         </div>
                     </div>
@@ -536,13 +539,13 @@
                         <h3>Self-Pay: Initial Visit</h3>
                         <div class="price">$299</div>
                         <p>Up to 50 minutes of comprehensive evaluation and treatment planning.</p>
-                        <a href="javascript:void(0)" class="v2-btn v2-btn-teal" style="width: 100%; justify-content: center;">Book Initial Visit</a>
+                        <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Scheduling Link Needed')" class="v2-btn v2-btn-teal" style="width: 100%; justify-content: center;">Book Initial Visit</a>
                     </div>
                     <div class="v2-pricing-card">
                         <h3>Self-Pay: Follow-Up</h3>
                         <div class="price">$149</div>
                         <p>Up to 50 minutes for medication management and returning patients.</p>
-                        <a href="javascript:void(0)" class="v2-btn v2-btn-outline" style="width: 100%; justify-content: center;">Book Follow-Up</a>
+                        <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Scheduling Link Needed')" class="v2-btn v2-btn-outline" style="width: 100%; justify-content: center;">Book Follow-Up</a>
                     </div>
                 </div>
                 <div class="v2-insurance-strip">
@@ -667,34 +670,34 @@
             </div>
             <div class="v2-footer-grid">
                 <div>
-                    <a href="javascript:void(0)" class="v2-footer-logo-link">
+                    <a href="index2.html" class="v2-footer-logo-link">
                         <img src="images/logo-white.png" alt="24-7 Shalom Psychiatry Logo" class="v2-footer-logo-img">
                     </a>
                     <p style="color: rgba(255,255,255,0.65); max-width: 350px; font-size: 0.92rem; line-height: 1.6;">Mental Health Care, Education & Understanding — Wherever You Are.</p>
                 </div>
                 <div>
                     <h4>Quick Links</h4>
-                    <a href="javascript:void(0)">Book an Appointment</a>
-                    <a href="javascript:void(0)">Pay Online</a>
-                    <a href="javascript:void(0)">Patient Portal</a>
-                    <a href="javascript:void(0)">New Patients</a>
-                    <a href="javascript:void(0)">Insurance & Pricing</a>
-                    <a href="javascript:void(0)">Refer a Patient</a>
+                    <a href="index2.html">Home</a>
+                    <a href="states.html">States</a>
+                    <a href="conditions.html">Conditions</a>
+                    <a href="adhd-center.html">ADHD Center</a>
+                    <a href="new-patients.html">New Patients</a>
+                    <a href="insurance.html">Insurance & Pricing</a>
                 </div>
                 <div>
                     <h4>Clinical Centers</h4>
-                    <a href="javascript:void(0)">ADHD Center</a>
-                    <a href="javascript:void(0)">Anxiety Management</a>
-                    <a href="javascript:void(0)">Conditions Overview</a>
-                    <a href="javascript:void(0)">Knowledge Center</a>
+                    <a href="adhd-center.html">ADHD Center</a>
+                    <a href="conditions.html#anxiety">Anxiety Management</a>
+                    <a href="conditions.html">Conditions Overview</a>
+                    <a href="knowledge-center.html">Knowledge Center</a>
                 </div>
                 <div>
                     <h4>States Served</h4>
-                    <a href="javascript:void(0)">Texas</a>
-                    <a href="javascript:void(0)">New Mexico</a>
-                    <a href="javascript:void(0)">Nevada</a>
-                    <a href="javascript:void(0)">Arizona</a>
-                    <a href="javascript:void(0)">Find Care in My State →</a>
+                    <a href="states.html#texas">Texas</a>
+                    <a href="states.html#new-mexico">New Mexico</a>
+                    <a href="states.html#nevada">Nevada</a>
+                    <a href="states.html#arizona">Arizona</a>
+                    <a href="states.html">Find Care in My State →</a>
                 </div>
             </div>
             <div class="v2-footer-bottom">
