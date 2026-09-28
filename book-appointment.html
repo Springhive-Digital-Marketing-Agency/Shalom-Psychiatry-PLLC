@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | 24-7 Shalom Psychiatry</title>
+    <meta name="description" content="Schedule an appointment with 24-7 Shalom Psychiatry.">
+    <link rel="stylesheet" href="css/index2-styles.css">
+    <style>
+        .booking-form-wrapper {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body class="page-v2">
+
+    <!-- TOP BAR -->
+    <div class="v2-topbar">
+        <div class="v2-topbar-inner">
+            <div class="v2-topbar-left">
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    (214) 518-2035
+                </span>
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    SMS (469) 317-0581
+                </span>
+                <span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    info@247shalompsychiatry.com
+                </span>
+            </div>
+            <div class="v2-topbar-right" style="display: flex; align-items: center; gap: 15px;">
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Patient Portal Link Needed')" class="v2-topbar-link" style="color: white; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Patient Portal</a>
+                <a href="javascript:void(0)" onclick="alert('[CLIENT VERIFICATION REQUIRED] Real Payment Integration Needed')" class="v2-topbar-link" style="color: white; text-decoration: none; font-size: 0.85rem; font-weight: 500;">Pay Online</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="v2-header">
+        <div class="v2-header-inner">
+            <a href="index2.html" class="v2-logo">
+                <img src="images/logo.png" alt="24-7 Shalom Psychiatry">
+            </a>
+            <nav class="v2-nav">
+                <a href="index2.html">Home</a>
+                <div class="v2-nav-divider"></div>
+                <a href="states.html">States</a>
+                <div class="v2-nav-divider"></div>
+                <a href="conditions.html">Conditions</a>
+                <div class="v2-nav-divider"></div>
+                <a href="adhd-center.html">ADHD Center</a>
+                <div class="v2-nav-divider"></div>
+                <a href="new-patients.html">New Patients</a>
+                <div class="v2-nav-divider"></div>
+                <a href="insurance.html">Insurance & Pricing</a>
+                <a href="book-appointment.html" class="v2-nav-cta">Book Appointment</a>
+            </nav>
+            <button class="v2-mobile-toggle" id="v2MobileToggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="v2-mobile-drawer" id="v2MobileDrawer">
+        <div class="v2-drawer-header">
+            <a href="index2.html" class="v2-logo">
+                <img src="images/logo.png" alt="24-7 Shalom Psychiatry">
+            </a>
+            <button class="v2-drawer-close" id="v2DrawerClose" aria-label="Close Navigation Menu">&times;</button>
+        </div>
+        <div class="v2-drawer-body">
+            <nav class="v2-drawer-nav">
+                <a href="index2.html">Home</a>
+                <a href="states.html">States</a>
+                <a href="conditions.html">Conditions</a>
+                <a href="adhd-center.html">ADHD Center</a>
+                <a href="new-patients.html">New Patients</a>
+                <a href="insurance.html">Insurance & Pricing</a>
+            </nav>
+            <div class="v2-drawer-footer" style="margin-top: auto;">
+                <a href="book-appointment.html" class="v2-btn v2-btn-teal" style="width: 100%; justify-content: center; margin-bottom: 1rem;">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+    <div class="v2-drawer-backdrop" id="v2DrawerBackdrop"></div>
+
+    <main style="background-color: #f8fafc; min-height: calc(100vh - 400px);">
+        <div class="v2-inner-hero" style="background-image: url('images/hero-1.jpg'); background-position: center 20%;">
+            <div class="v2-inner-hero-overlay">
+                <h1 class="v2-inner-hero-title">Book an Appointment</h1>
+            </div>
+        </div>
+        
+        <div class="v2-container" style="text-align: center; padding-top: 4rem; margin-bottom: -1rem;">
+            <p style="color: var(--v2-muted); font-size: 1.15rem; line-height: 1.6; max-width: 750px; margin: 0 auto;">
+                Schedule a new or returning appointment with our psychiatric care team. Choose your preferred visit type and provide the information needed to help us prepare for your visit.
+            </p>
+        </div>
+
+        <div class="booking-form-wrapper">
+            <div class="formaloo--root-container" data-form-slug="XnhyHc0I" data-transparent-background="false" data-hide-title="false" data-hide-cover-and-logo="false" data-fill-container-width="true" data-auto-height="false" data-skip-welcome-page="false"></div>
+            <script src="https://embed.formaloo.me/v1/main.js" defer></script>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="v2-footer">
+        <div class="v2-container">
+            <div class="v2-footer-grid">
+                <div>
+                    <a href="index2.html" class="v2-footer-logo-link">
+                        <img src="images/logo-white.png" alt="24-7 Shalom Psychiatry Logo" class="v2-footer-logo-img">
+                    </a>
+                    <p style="color: rgba(255,255,255,0.65); max-width: 350px; font-size: 0.92rem; line-height: 1.6;">Mental Health Care, Education & Understanding — Wherever You Are.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="index2.html">Home</a>
+                    <a href="states.html">States</a>
+                    <a href="conditions.html">Conditions</a>
+                    <a href="insurance.html">Insurance & Pricing</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p style="color: rgba(255,255,255,0.65);">Phone: (214) 518-2035</p>
+                    <p style="color: rgba(255,255,255,0.65);">Email: info@247shalompsychiatry.com</p>
+                </div>
+            </div>
+            <div class="v2-footer-bottom">
+                <p>&copy; 2024 24-7 Shalom Psychiatry PLLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Drawer Navigation
+        const mobileToggle = document.getElementById('v2MobileToggle');
+        const mobileDrawer = document.getElementById('v2MobileDrawer');
+        const drawerClose = document.getElementById('v2DrawerClose');
+        const drawerBackdrop = document.getElementById('v2DrawerBackdrop');
+
+        function openDrawer() {
+            if (mobileDrawer) mobileDrawer.classList.add('open');
+            if (drawerBackdrop) drawerBackdrop.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeDrawer() {
+            if (mobileDrawer) mobileDrawer.classList.remove('open');
+            if (drawerBackdrop) drawerBackdrop.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+        if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+        if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
+    });
+    </script>
+</body>
+</html>
