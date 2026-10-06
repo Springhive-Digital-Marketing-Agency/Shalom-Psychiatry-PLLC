@@ -1,5 +1,5 @@
-/* =====================================================
-   INDEX 2 — INSPIRED BY WP418 REFERENCE DESIGN
+﻿/* =====================================================
+   INDEX 2 â€” INSPIRED BY WP418 REFERENCE DESIGN
    ===================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
@@ -11,8 +11,8 @@
     --v2-teal-light: #14B8A6;
     --v2-gold: #E8A838;
     --v2-dark: #1A202C;
-    --v2-text: #2D3748;
-    --v2-muted: #718096;
+    --v2-text: #000000;
+    --v2-muted: #000000;
     --v2-light: #F7FAFC;
     --v2-white: #FFFFFF;
     --v2-radius: 12px;
@@ -25,7 +25,7 @@
 
 .page-v2 {
     font-family: 'DM Sans', sans-serif;
-    color: var(--v2-text);
+    color: #000000;
     background: var(--v2-white);
     line-height: 1.6;
     overflow-x: hidden;
@@ -107,7 +107,7 @@
     gap: 0;
 }
 .v2-nav a {
-    color: var(--v2-text);
+    color: #000000;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
@@ -273,7 +273,7 @@
 
 .v2-btn-outline {
     background: white;
-    color: var(--v2-text) !important;
+    color: #000000 !important;
     border-color: #CBD5E0;
 }
 
@@ -386,8 +386,8 @@
 }
 .v2-section-header p {
     font-size:16px;
-    color: var(--v2-muted);
-    max-width: 600px;
+    color: #000000;
+    max-width: 750px;
     margin: 0 auto;
 }
 .v2-label {
@@ -460,7 +460,7 @@
 }
 .v2-card p {
     font-size:16px;
-    color: var(--v2-muted);
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -581,7 +581,7 @@
 }
 .v2-collage-badge-text span {
     font-size: 0.75rem;
-    color: var(--v2-muted);
+    color: #000000;
     font-weight: 500;
 }
 
@@ -624,7 +624,7 @@
 }
 .v2-welcome-text {
     font-size: 0.98rem;
-    color: var(--v2-muted);
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 2rem;
 }
@@ -674,7 +674,7 @@
 }
 .v2-matrix-card p {
     font-size:16px;
-    color: var(--v2-muted);
+    color: #000000;
     line-height: 1.5;
     margin: 0;
 }
@@ -796,7 +796,7 @@
 }
 .v2-journey-card p {
     font-size:16px;
-    color: #475569;
+    color: #000000;
     line-height: 1.7;
     margin-bottom: 1.8rem;
 }
@@ -891,7 +891,7 @@
 }
 .v2-video-info span {
     font-size: 0.85rem;
-    color: var(--v2-muted);
+    color: #000000;
 }
 
 /* ---------- PROVIDER (LUXURY CLINICAL PROFILE) ---------- */
@@ -966,7 +966,7 @@
 }
 .v2-badge-text p {
     font-size: 0.8rem;
-    color: var(--v2-muted);
+    color: #000000;
     margin: 0;
 }
 
@@ -1015,13 +1015,13 @@
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.08rem;
-    color: #334155;
+    color: #000000;
     line-height: 1.6;
 }
 
 .v2-provider-bio {
     font-size: 0.98rem;
-    color: var(--v2-muted);
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 1.8rem;
 }
@@ -1040,7 +1040,7 @@
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #334155;
+    color: #000000;
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -1066,7 +1066,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 900px;
+    max-width: 750px;
     margin: 0 auto;
 }
 .v2-pricing-card {
@@ -1096,7 +1096,7 @@
     font-weight: 700;
 }
 .v2-pricing-card p {
-    color: var(--v2-muted);
+    color: #000000;
     margin-bottom: 2rem;
     font-size:16px;
 }
@@ -1198,7 +1198,7 @@
 }
 .v2-contact-lead {
     font-size: 1.05rem;
-    color: var(--v2-muted);
+    color: #000000;
     line-height: 1.8;
     margin-bottom: 2.5rem;
 }
@@ -1240,7 +1240,7 @@
     font-size: 0.82rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--v2-muted);
+    color: #000000;
     margin-bottom: 0.2rem;
     font-weight: 700;
 }
@@ -1277,7 +1277,7 @@
 }
 .v2-form-card-header p {
     font-size:16px;
-    color: var(--v2-muted);
+    color: #000000;
 }
 
 .v2-form-row {
@@ -1896,4 +1896,16 @@ p, li, .v2-hero-desc, .v2-section-header p, .v2-card p, .v2-journey-card p, .v2-
     line-height: 1.2;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+.v2-inner-page-title, .v2-section-header h2 { font-size: 46px !important; }
+.v2-about-grid h2, .v2-about-grid h3, .v2-about-grid h4 { font-size: 24px !important; }
+
+
 

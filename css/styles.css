@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     /* Color Palette - Premium, Warm, Professional */
     --color-primary: #1A365D; /* Deep sophisticated blue (kept for text contrast) */
     --color-primary-light: #A9D8F7; /* User requested light blue */
@@ -6,8 +6,8 @@
     --color-accent: #F7A000; /* User requested orange/gold */
     --color-background: #F7FAFC; /* Very light cool gray for freshness */
     --color-surface: #FFFFFF;
-    --color-text-main: #2D3748;
-    --color-text-muted: #718096;
+    --color-text-main: #000000;
+    --color-text-muted: #000000;
     
     /* State / Clinical Area Theme Colors */
     --color-adhd: #EBF4FF; /* Light blue */
@@ -1664,3 +1664,4 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+

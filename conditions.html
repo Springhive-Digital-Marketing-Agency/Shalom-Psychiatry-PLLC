@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,7 +93,7 @@
             </nav>
             <div class="v2-drawer-footer" style="margin-top: auto;">
                 <a href="book-appointment.html" class="v2-btn v2-btn-teal" style="width: 100%; justify-content: center; margin-bottom: 1rem;">Book Appointment</a>
-                <a href="javascript:void(0)" class="v2-phone-badge" style="width: 100%; justify-content: center;">
+                <a href="javascript:void(0)" class="v2-phone-badge" >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
@@ -105,7 +105,7 @@
     <div class="v2-drawer-backdrop" id="v2DrawerBackdrop"></div>
 
     <main>
-    <div class="v2-inner-hero" style="background-image: url('images/clinical-anxiety.jpg'); background-position: center center !important;">
+    <div class="v2-inner-hero" style="background-image: url('images/clinical_anxiety.jpg'); background-position: center center !important;">
         <div class="v2-inner-hero-overlay">
             <h1 class="v2-inner-hero-title">Conditions We Treat</h1>
         </div>
@@ -116,35 +116,107 @@
                     <h2 class="v2-inner-page-title">Clinical Services</h2>
                     <p>Evidence-based care for a wide range of mental health conditions. We take a holistic, personalized approach to your well-being.</p>
                 </div>
-                <div class="v2-journey-grid">
-                    <div class="v2-journey-card" id="anxiety">
-                        <h3>Anxiety Disorders</h3>
-                        <p>Comprehensive evaluation and treatment for generalized anxiety, panic disorder, and social anxiety. We utilize modern medication strategies and behavioral tools.</p>
-                        <ul>
-                            <li>Racing thoughts and excessive worry</li>
-                            <li>Physical symptoms like rapid heart rate</li>
-                        </ul>
+                                                <div class="v2-cards-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/cond_new_adhd.jpg" alt="ADHD Evaluations" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">ADHD Evaluations</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Comprehensive evaluation and treatment strategies for Adult, Teen, and Childhood ADHD.</p>
+                            <a href="conditions/adhd.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
                     </div>
-                    <div class="v2-journey-card">
-                        <h3>Depression & Mood</h3>
-                        <p>Compassionate support for major depressive disorder and mood instability. We help you regain your energy, focus, and joy.</p>
-                        <ul>
-                            <li>Persistent sadness or numbness</li>
-                            <li>Loss of interest in daily activities</li>
-                        </ul>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/clinical_anxiety.jpg" alt="Anxiety Disorders" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">Anxiety Disorders</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Evidence-based care for generalized anxiety, panic disorder, and social anxiety.</p>
+                            <a href="conditions/anxiety.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
                     </div>
-                    <div class="v2-journey-card">
-                        <h3>Pain & Mental Health</h3>
-                        <p>Specialized psychiatric support for individuals living with chronic pain, addressing the psychological impact of physical suffering.</p>
-                        <ul>
-                            <li>Coping strategies for chronic conditions</li>
-                            <li>Medication management integration</li>
-                        </ul>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/cond_new_depression.jpg" alt="Depression & Mood" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">Depression & Mood</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Compassionate support for major depressive disorder and mood instability.</p>
+                            <a href="conditions/depression.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/cond_new_bipolar.jpg" alt="Bipolar Disorder" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">Bipolar Disorder</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Careful evaluation and management of mood shifts and bipolar spectrum symptoms.</p>
+                            <a href="conditions/bipolar.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/adhd-hero-centered.jpg" alt="OCD" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">OCD</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Support for managing intrusive thoughts and compulsive behaviors.</p>
+                            <a href="conditions/ocd.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/cond_new_ptsd.jpg" alt="PTSD & Trauma" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">PTSD & Trauma</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Trauma-informed care and medication support for PTSD symptoms.</p>
+                            <a href="conditions/ptsd.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/cond_new_insomnia.jpg" alt="Insomnia & Sleep" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">Insomnia & Sleep</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Addressing the root causes of sleep disturbances for better restorative rest.</p>
+                            <a href="conditions/insomnia.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/cond_new_panic.jpg" alt="Panic Disorder" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">Panic Disorder</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Strategies and treatments to manage and reduce panic attacks.</p>
+                            <a href="conditions/panic.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="v2-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; background-color: var(--v2-light-bg); border: none;">
+                        <div style="height: 220px; overflow: hidden;">
+                            <img src="images/clinical_pain.jpg" alt="Medication Management" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; align-items: center; text-align: center;">
+                            <h3 style="margin-top: 0; color: var(--v2-navy); font-size: 1.25rem;">Medication Management</h3>
+                            <p style="flex-grow: 1; color: var(--v2-text); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Precision psychiatric medication strategies for optimal mental wellness.</p>
+                            <a href="conditions/medication.html" class="v2-btn v2-btn-teal" >Learn More</a>
+                        </div>
                     </div>
                 </div>
-                <div style="text-align:center; margin-top: 3rem;">
-                    <a href="book-appointment.html" class="v2-btn v2-btn-teal">Book an Evaluation</a>
-                </div>
+                
             </div>
         </section>
 </main>
@@ -161,7 +233,7 @@
                     <a href="index2.html" class="v2-footer-logo-link">
                         <img src="images/logo-white.png" alt="24-7 Shalom Psychiatry Logo" class="v2-footer-logo-img">
                     </a>
-                    <p style="color: rgba(255,255,255,0.65); max-width: 350px; font-size: 0.92rem; line-height: 1.6;">Mental Health Care, Education & Understanding — Wherever You Are.</p>
+                    <p style="color: rgba(255,255,255,0.65); max-width: 350px; font-size: 0.92rem; line-height: 1.6;">Mental Health Care, Education & Understanding â€” Wherever You Are.</p>
                 </div>
                 <div>
                     <h4>Quick Links</h4>
@@ -185,7 +257,7 @@
                     <a href="states.html#new-mexico">New Mexico</a>
                     <a href="states.html#nevada">Nevada</a>
                     <a href="states.html#arizona">Arizona</a>
-                    <a href="states.html">Find Care in My State →</a>
+                    <a href="states.html">Find Care in My State â†’</a>
                 </div>
             </div>
             <div class="v2-footer-bottom">
@@ -256,4 +328,13 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
