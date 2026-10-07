@@ -1,5 +1,5 @@
 ﻿/* =====================================================
-   INDEX 2 â€” INSPIRED BY WP418 REFERENCE DESIGN
+   INDEX 2 &mdash; INSPIRED BY WP418 REFERENCE DESIGN
    ===================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
@@ -1906,6 +1906,7 @@ p, li, .v2-hero-desc, .v2-section-header p, .v2-card p, .v2-journey-card p, .v2-
 
 .v2-inner-page-title, .v2-section-header h2 { font-size: 46px !important; }
 .v2-about-grid h2, .v2-about-grid h3, .v2-about-grid h4 { font-size: 24px !important; }
+
 
 
 
