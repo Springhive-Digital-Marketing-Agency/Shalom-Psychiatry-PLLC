@@ -6,6 +6,79 @@
     <title>ADHD Center | 24-7 Shalom Psychiatry</title>
     <meta name="description" content="Premium, accessible mental health care, education, and understanding. We specialize in ADHD, Anxiety, and Pain & Mental Health across multiple states.">
     <link rel="stylesheet" href="css/index2-styles.css">
+    <style>
+        .v2-faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+        .v2-faq-item {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            overflow: hidden;
+        }
+        .v2-faq-item[open] {
+            border-color: var(--v2-teal);
+            box-shadow: 0 4px 10px rgba(13, 148, 136, 0.08);
+        }
+        .v2-faq-summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 1rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--v2-navy);
+            user-select: none;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+        .v2-faq-summary:hover {
+            background-color: #F8FAFC;
+            color: var(--v2-teal);
+        }
+        .v2-faq-summary::-webkit-details-marker {
+            display: none;
+        }
+        .v2-faq-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: rgba(13, 148, 136, 0.1);
+            color: var(--v2-teal);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            transition: transform 0.25s ease, background-color 0.2s ease, color 0.2s ease;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+        .v2-faq-item[open] .v2-faq-icon {
+            transform: rotate(45deg);
+            background: var(--v2-teal);
+            color: #FFFFFF;
+        }
+        .v2-faq-answer {
+            padding: 0.95rem 1.25rem 1.15rem 1.25rem;
+            border-top: 1px solid #F1F5F9;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--v2-text);
+            background: #FAFAFA;
+        }
+        .v2-faq-answer p {
+            margin: 0 !important;
+            font-size: 0.95rem !important;
+            line-height: 1.7 !important;
+            color: var(--v2-text) !important;
+        }
+    </style>
 </head>
 <body class="page-v2">
 
@@ -152,7 +225,7 @@
                 <div class="v2-section-header" style="text-align: left; margin-bottom: 2rem;">
                     <span class="v2-label">Core Brain Skills</span>
                     <h2>Six Important <span>Executive Function Skills</span></h2>
-                    <p>Executive functions develop across childhood and continue maturing well into adulthood. Difficulties in any of these areas can significantly impact everyday responsibilities.</p>
+                    <p style="margin-left: 0; margin-right: auto; text-align: left;">Executive functions develop across childhood and continue maturing well into adulthood. Difficulties in any of these areas can significantly impact everyday responsibilities.</p>
                 </div>
 
                 <div class="v2-cards-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3.5rem;">
@@ -215,7 +288,7 @@
                 <div class="v2-section-header" style="text-align: left; margin-bottom: 2rem;">
                     <span class="v2-label">The Science of ADHD</span>
                     <h2>How Brain Messages Travel & <span>Neurotransmitters</span></h2>
-                    <p>ADHD involves differences in neural circuits that support attention, motivation, and self-regulation &mdash; not low intelligence or a lack of moral willpower.</p>
+                    <p style="margin-left: 0; margin-right: auto; text-align: left;">ADHD involves differences in neural circuits that support attention, motivation, and self-regulation &mdash; not low intelligence or a lack of moral willpower.</p>
                 </div>
 
                 <div class="v2-cards-grid" style="grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 3.5rem;">
@@ -251,7 +324,7 @@
                     <div class="v2-section-header" style="text-align: left; margin-bottom: 1.5rem;">
                         <span class="v2-label">Pharmacology Overview</span>
                         <h2>How Can <span>ADHD Medication Help?</span></h2>
-                        <p>ADHD medicines may make it easier to regulate attention and manage impulsive behavior. They create neurochemical support; they do not automatically teach organizational skills or time-management habits.</p>
+                        <p style="margin-left: 0; margin-right: auto; text-align: left;">ADHD medicines may make it easier to regulate attention and manage impulsive behavior. They create neurochemical support; they do not automatically teach organizational skills or time-management habits.</p>
                     </div>
 
                     <div style="overflow-x: auto; margin-top: 1.5rem; margin-bottom: 2rem;">
@@ -325,7 +398,7 @@
                 <div class="v2-section-header" style="text-align: left; margin-bottom: 2rem;">
                     <span class="v2-label">Practical Family Guidance</span>
                     <h2>ADHD Family Education & <span>Daily Routines</span></h2>
-                    <p>Executive skills are built through predictable, repeatable routines that reduce memory burden and lower friction at home, school, and work.</p>
+                    <p style="margin-left: 0; margin-right: auto; text-align: left;">Executive skills are built through predictable, repeatable routines that reduce memory burden and lower friction at home, school, and work.</p>
                 </div>
 
                 <!-- The 3-Part Daily Routine -->
@@ -423,7 +496,7 @@
                 </div>
 
                 <!-- FREQUENTLY ASKED QUESTIONS -->
-                <div class="v2-about-grid" style="margin-bottom: 4rem;">
+                <div class="v2-about-grid" style="margin-bottom: 4rem; align-items: start;">
                     <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
                         <img src="images/faq_chair_4k.jpg" alt="ADHD Questions and Answers" style="width: 100%; height: 100%; object-fit: cover; min-height: 350px; display: block;">
                     </div>
@@ -432,21 +505,56 @@
                             <span class="v2-label">Common Questions</span>
                             <h2 style="font-size: 2rem;">Questions Kids & Families Often Ask</h2>
                         </div>
-                        <div style="line-height: 1.7; font-size: 0.93rem; color: var(--v2-text);">
-                            <h4 style="color: var(--v2-navy); margin-bottom: 0.3rem;">&ldquo;Does ADHD mean my brain is broken?&rdquo;</h4>
-                            <p style="margin-bottom: 1rem;">No. ADHD describes an established pattern of differences in neural networks supporting attention, motivation, and self-regulation. Different brains need tailored systems, not blame.</p>
+                        <div class="v2-faq-accordion">
+                            <details class="v2-faq-item">
+                                <summary class="v2-faq-summary">
+                                    <span>&ldquo;Does ADHD mean my brain is broken?&rdquo;</span>
+                                    <span class="v2-faq-icon">+</span>
+                                </summary>
+                                <div class="v2-faq-answer">
+                                    <p>No. ADHD describes an established pattern of differences in neural networks supporting attention, motivation, and self-regulation. Different brains need tailored systems, not blame.</p>
+                                </div>
+                            </details>
 
-                            <h4 style="color: var(--v2-navy); margin-bottom: 0.3rem;">&ldquo;Will I need medicine forever?&rdquo;</h4>
-                            <p style="margin-bottom: 1rem;">Not necessarily. Treatment plans are individualized and periodically reviewed with your clinician as routines develop and life stages evolve.</p>
+                            <details class="v2-faq-item">
+                                <summary class="v2-faq-summary">
+                                    <span>&ldquo;Will I need medicine forever?&rdquo;</span>
+                                    <span class="v2-faq-icon">+</span>
+                                </summary>
+                                <div class="v2-faq-answer">
+                                    <p>Not necessarily. Treatment plans are individualized and periodically reviewed with your clinician as routines develop and life stages evolve.</p>
+                                </div>
+                            </details>
 
-                            <h4 style="color: var(--v2-navy); margin-bottom: 0.3rem;">&ldquo;Will medicine change my personality?&rdquo;</h4>
-                            <p style="margin-bottom: 1rem;">The goal of medication is to reduce impairing symptoms while preserving your spark, humor, and unique personality. If you feel flat, irritable, or unlike yourself, let your provider know immediately so adjustments can be made.</p>
+                            <details class="v2-faq-item">
+                                <summary class="v2-faq-summary">
+                                    <span>&ldquo;Will medicine change my personality?&rdquo;</span>
+                                    <span class="v2-faq-icon">+</span>
+                                </summary>
+                                <div class="v2-faq-answer">
+                                    <p>The goal of medication is to reduce impairing symptoms while preserving your spark, humor, and unique personality. If you feel flat, irritable, or unlike yourself, let your provider know immediately so adjustments can be made.</p>
+                                </div>
+                            </details>
 
-                            <h4 style="color: var(--v2-navy); margin-bottom: 0.3rem;">&ldquo;Why can I play games for hours but not do homework?&rdquo;</h4>
-                            <p style="margin-bottom: 1rem;">Video games provide continuous, instant feedback and stimulation (dopamine bursts), whereas homework requires self-directed motivation and delayed reward. This is a neurobiological feature of ADHD, not proof of laziness.</p>
+                            <details class="v2-faq-item">
+                                <summary class="v2-faq-summary">
+                                    <span>&ldquo;Why can I play games for hours but not do homework?&rdquo;</span>
+                                    <span class="v2-faq-icon">+</span>
+                                </summary>
+                                <div class="v2-faq-answer">
+                                    <p>Video games provide continuous, instant feedback and stimulation (dopamine bursts), whereas homework requires self-directed motivation and delayed reward. This is a neurobiological feature of ADHD, not proof of laziness.</p>
+                                </div>
+                            </details>
 
-                            <h4 style="color: var(--v2-navy); margin-bottom: 0.3rem;">&ldquo;Can adults have ADHD?&rdquo;</h4>
-                            <p>Yes. ADHD is a lifespan condition. While hyperactive symptoms often soften into inner restlessness with age, executive dysfunction, disorganization, and procrastination frequently persist into adulthood.</p>
+                            <details class="v2-faq-item">
+                                <summary class="v2-faq-summary">
+                                    <span>&ldquo;Can adults have ADHD?&rdquo;</span>
+                                    <span class="v2-faq-icon">+</span>
+                                </summary>
+                                <div class="v2-faq-answer">
+                                    <p>Yes. ADHD is a lifespan condition. While hyperactive symptoms often soften into inner restlessness with age, executive dysfunction, disorganization, and procrastination frequently persist into adulthood.</p>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
