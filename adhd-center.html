@@ -506,7 +506,7 @@
                             <h2 style="font-size: 2rem;">Questions Kids & Families Often Ask</h2>
                         </div>
                         <div class="v2-faq-accordion">
-                            <details class="v2-faq-item">
+                            <details class="v2-faq-item" name="adhd-faq">
                                 <summary class="v2-faq-summary">
                                     <span>&ldquo;Does ADHD mean my brain is broken?&rdquo;</span>
                                     <span class="v2-faq-icon">+</span>
@@ -516,7 +516,7 @@
                                 </div>
                             </details>
 
-                            <details class="v2-faq-item">
+                            <details class="v2-faq-item" name="adhd-faq">
                                 <summary class="v2-faq-summary">
                                     <span>&ldquo;Will I need medicine forever?&rdquo;</span>
                                     <span class="v2-faq-icon">+</span>
@@ -526,7 +526,7 @@
                                 </div>
                             </details>
 
-                            <details class="v2-faq-item">
+                            <details class="v2-faq-item" name="adhd-faq">
                                 <summary class="v2-faq-summary">
                                     <span>&ldquo;Will medicine change my personality?&rdquo;</span>
                                     <span class="v2-faq-icon">+</span>
@@ -536,7 +536,7 @@
                                 </div>
                             </details>
 
-                            <details class="v2-faq-item">
+                            <details class="v2-faq-item" name="adhd-faq">
                                 <summary class="v2-faq-summary">
                                     <span>&ldquo;Why can I play games for hours but not do homework?&rdquo;</span>
                                     <span class="v2-faq-icon">+</span>
@@ -546,7 +546,7 @@
                                 </div>
                             </details>
 
-                            <details class="v2-faq-item">
+                            <details class="v2-faq-item" name="adhd-faq">
                                 <summary class="v2-faq-summary">
                                     <span>&ldquo;Can adults have ADHD?&rdquo;</span>
                                     <span class="v2-faq-icon">+</span>
@@ -556,6 +556,19 @@
                                 </div>
                             </details>
                         </div>
+                        <script>
+                            document.querySelectorAll('.v2-faq-accordion details').forEach(function(detail) {
+                                detail.addEventListener('toggle', function() {
+                                    if (detail.open) {
+                                        document.querySelectorAll('.v2-faq-accordion details').forEach(function(otherDetail) {
+                                            if (otherDetail !== detail) {
+                                                otherDetail.removeAttribute('open');
+                                            }
+                                        });
+                                    }
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
 
