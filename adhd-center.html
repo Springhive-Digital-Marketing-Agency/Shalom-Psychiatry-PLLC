@@ -557,17 +557,43 @@
                             </details>
                         </div>
                         <script>
-                            document.querySelectorAll('.v2-faq-accordion details').forEach(function(detail) {
-                                detail.addEventListener('toggle', function() {
-                                    if (detail.open) {
-                                        document.querySelectorAll('.v2-faq-accordion details').forEach(function(otherDetail) {
-                                            if (otherDetail !== detail) {
-                                                otherDetail.removeAttribute('open');
+                            (function() {
+                                function initExclusiveAccordion() {
+                                    var allDetails = document.querySelectorAll('.v2-faq-accordion details');
+                                    if (!allDetails || allDetails.length === 0) return;
+                                    
+                                    allDetails.forEach(function(targetDetail) {
+                                        var summary = targetDetail.querySelector('summary');
+                                        if (summary) {
+                                            summary.addEventListener('click', function() {
+                                                if (!targetDetail.open) {
+                                                    allDetails.forEach(function(detail) {
+                                                        if (detail !== targetDetail) {
+                                                            detail.open = false;
+                                                        }
+                                                    });
+                                                }
+                                            });
+                                        }
+
+                                        targetDetail.addEventListener('toggle', function() {
+                                            if (targetDetail.open) {
+                                                allDetails.forEach(function(detail) {
+                                                    if (detail !== targetDetail && detail.open) {
+                                                        detail.open = false;
+                                                    }
+                                                });
                                             }
                                         });
-                                    }
-                                });
-                            });
+                                    });
+                                }
+
+                                if (document.readyState === 'loading') {
+                                    document.addEventListener('DOMContentLoaded', initExclusiveAccordion);
+                                } else {
+                                    initExclusiveAccordion();
+                                }
+                            })();
                         </script>
                     </div>
                 </div>
