@@ -1,4 +1,4 @@
-﻿/* =====================================================
+/* =====================================================
    INDEX 2 &mdash; INSPIRED BY WP418 REFERENCE DESIGN
    ===================================================== */
 
@@ -863,24 +863,7 @@
     background-size: cover;
     background-position: center;
 }
-.v2-play-btn {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 55px; height: 55px;
-    background: var(--v2-teal);
-    border: none;
-    border-radius: 50%;
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: var(--v2-transition);
-    box-shadow: 0 4px 15px rgba(13, 148, 136, 0.4);
-}
-.v2-play-btn:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    background: var(--v2-teal-dark);
-}
+.v2-play-btn { display: none !important; }
 .v2-video-info {
     padding: 1.5rem;
 }
